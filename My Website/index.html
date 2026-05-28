@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles-container"></div>
+
+  <header>
+    <h1>Dan Angelo Legaspi</h1>
+    <p>Web Developer | IT Graduate</p>
+  </header>
+
+  <!-- about section with toggle functionality -->
+  <section data-section="about">
+    <h2 class="toggle" tabindex="0" aria-expanded="false">About Me</h2>
+    <div class="actions">
+      <button class="view-btn" type="button" aria-pressed="false">View</button>
+      <button class="edit-btn" type="button">Edit</button>
+      <button class="add-btn" type="button">Add</button>
+    </div>
+    <div class="content hidden">
+      <div class="section-body about-body">
+        <div class="avatar" aria-hidden="true">👤</div>
+        <div class="bio">
+          <p>I am passionate about technology and software development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects section with toggle functionality -->
+  <section data-section="projects">
+    <h2 class="toggle" tabindex="0" aria-expanded="false">Projects</h2>
+    <div class="actions">
+      <button class="view-btn" type="button" aria-pressed="false">View</button>
+      <button class="edit-btn" type="button">Edit</button>
+      <button class="add-btn" type="button">Add</button>
+    </div>
+    <div class="content hidden">
+      <ul class="projects-list">
+        <li class="project">
+          <h3>ASTRO Scheduling System</h3>
+          <p>Automated scheduling with room optimization.</p>
+        </li>
+        <li class="project">
+          <h3>Fruit/Vegetable Identifier</h3>
+          <p>AI-based produce recognition system.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- skills section with toggle functionality-->
+  <section data-section="skills">
+    <h2 class="toggle" tabindex="0" aria-expanded="false">Skills</h2>
+    <div class="actions">
+      <button class="view-btn" type="button" aria-pressed="false">View</button>
+      <button class="edit-btn" type="button">Edit</button>
+      <button class="add-btn" type="button">Add</button>
+    </div>
+    <div class="content hidden">
+      <ul class="skills-list">
+        <li class="skill">JavaScript</li>
+        <li class="skill">HTML &amp; CSS</li>
+        <li class="skill">React</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- resume section with toggle functionality-->
+  <section data-section="resume">
+    <h2 class="toggle" tabindex="0" aria-expanded="false">Resume / CV</h2>
+    <div class="actions">
+      <button class="view-btn" type="button" aria-pressed="false">View</button>
+      <button class="upload-btn" type="button">Upload</button>
+      <button class="download-btn" type="button" disabled>Download</button>
+      <button class="remove-resume-btn" type="button" disabled>Remove</button>
+    </div>
+    <div class="content hidden">
+      <div class="resume-box">
+        <p class="resume-name">No resume uploaded.</p>
+        <iframe class="resume-preview" style="display:none;" title="Resume preview"></iframe>
+        <input type="file" accept="application/pdf" class="resume-input" style="display:none">
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section with toggle functionality -->
+  <section data-section="contact">
+    <h2 class="toggle" tabindex="0" aria-expanded="false">Contact Me</h2>
+    <div class="actions">
+      <button class="view-btn" type="button" aria-pressed="false">View</button>
+      <button class="edit-btn" type="button">Edit</button>
+      <button class="add-btn" type="button">Add</button>
+    </div>
+    <div class="content hidden">
+      <dl class="contact-list">
+        <dt>Email</dt>
+        <dd>dlegaspi947@gmail.com</dd>
+        <dt>Phone</dt>
+        <dd>09662513809</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- education / timeline section -->
+  <section data-section="education">
+    <h2 class="toggle" tabindex="0" aria-expanded="true">Timeline / Education</h2>
+    <div class="actions">
+      <button class="view-btn" type="button" aria-pressed="true">View</button>
+      <button class="edit-btn" type="button">Edit</button>
+      <button class="add-btn" type="button">Add</button>
+    </div>
+    <div class="content">
+      <div class="education-grid">
+        <div class="education-card">
+          <h4>College / Course</h4>
+          <div class="card-actions">
+            <button class="add-btn" type="button">Add</button>
+          </div>
+          <ul class="education-list college-list">
+            <li class="education-item education-entry fixed">
+              <div class="entry-fields">
+                <span class="institution">University Name</span>
+                <span class="course">Bachelor of Science in Information Technology</span>
+                <span class="year">2018 - 2022</span>
+              </div>
+              <div class="item-actions">
+                <button class="item-edit-btn" type="button">Edit</button>
+                <button class="item-save-btn" type="button">Save</button>
+                <button class="delete-btn" type="button">✖</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="education-card">
+          <h4>High School / Strand</h4>
+          <div class="card-actions">
+            <button class="add-btn" type="button">Add</button>
+          </div>
+          <ul class="education-list highschool-list">
+            <li class="education-item education-entry fixed">
+              <div class="entry-fields">
+                <span class="institution">High School Name</span>
+                <span class="course">Senior High - STEM</span>
+                <span class="year">2016 - 2018</span>
+              </div>
+              <div class="item-actions">
+                <button class="item-edit-btn" type="button">Edit</button>
+                <button class="item-save-btn" type="button">Save</button>
+                <button class="delete-btn" type="button">✖</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="education-card">
+          <h4>Elementary</h4>
+          <div class="card-actions">
+            <button class="add-btn" type="button">Add</button>
+          </div>
+          <ul class="education-list elementary-list">
+            <li class="education-item education-entry fixed">
+              <div class="entry-fields">
+                <span class="institution">Elementary School Name</span>
+                <span class="year">2008 - 2014</span>
+              </div>
+              <div class="item-actions">
+                <button class="item-edit-btn" type="button">Edit</button>
+                <button class="item-save-btn" type="button">Save</button>
+                <button class="delete-btn" type="button">✖</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="education-card">
+          <h4>Achievements &amp; Certifications</h4>
+          <div class="card-actions">
+            <button class="add-btn" type="button">Add</button>
+          </div>
+          <ul class="education-list achievements-list">
+            <li class="education-item education-entry">
+              <div class="entry-fields">
+                <span class="achievement">Certified Web Developer</span>
+                <span class="year">2021</span>
+              </div>
+              <div class="item-actions">
+                <button class="item-edit-btn" type="button">Edit</button>
+                <button class="item-save-btn" type="button">Save</button>
+                <button class="delete-btn" type="button">✖</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2026 Dan Angelo Legaspi. Crafted with HTML, CSS, and JavaScript.</p>
+      <p>Connect on GitHub, LinkedIn, or send a message through the contact section.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
